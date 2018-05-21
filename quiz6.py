@@ -4,7 +4,7 @@
 
 file = open('engmix.txt')
 
-#ch = input('Enter a letter: ')
+ch = input('Enter a letter: ')
 
 for line in file:
     line = line.strip()
