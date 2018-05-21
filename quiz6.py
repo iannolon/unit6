@@ -6,6 +6,7 @@ file = open('engmix.txt')
 
 ch = input('Enter a letter: ')
 
+#Printing out all the words in the dictionary that have 4 of this letter
 for line in file:
     line = line.strip()
     if ch in line:
@@ -27,6 +28,7 @@ for line in file:
                 break
 '''
 
+#Printing out all the words that start with this letter and are this number letters long
 num = int(input('Enter a number: '))
 ch2 = input('Enter a letter: ')
 goodWord = 0
@@ -47,6 +49,7 @@ for line in file:
         if goodWord != 0 and newWord == True:
             print(goodWord)
 
+#finding the 8000th word out of 10+ letter words
 newDictionary = []
 for line in file:
     line = line.strip()
@@ -54,7 +57,7 @@ for line in file:
         newDictionary.append(line)
 print(newDictionary[7999])
 
-
+#Finding the word that has the most vowels
 biggestWord = 'a'
 mostVowels = 1
 for line in file:
